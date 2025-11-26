@@ -1,22 +1,20 @@
-# RHEED Viewer & Control
+# RHEED (Reflection High-Energy Electron Diffraction) Viewer
 
-A Python-based GUI application for acquiring, viewing, and analyzing Reflection High-Energy Electron Diffraction (RHEED) data in real-time. Designed for Molecular Beam Epitaxy (MBE) systems, this tool interfaces with Allied Vision cameras and pyrometers to monitor thin film growth.
+RHEED Viewer is a Graphical User Interface (GUI) application for acquiring, displaying, and saving Reflection High-Energy Electron Diffraction (RHEED) data in real-time. It includes a RHEED imaging live stream (including RHEED oscillations), as well as the ability to acquire single images or streams of images at a specified frequency and duration, making it useful for acquiring thin-film growth trajectory data. Integration with a BASF pyrometer enables users to cross-correlate temperature data with the RHEED images. While proprietary RHEED softwares offer more advanced features, this software offers greater personalization for integration with custom data processing pipelines.
 
 ## Features
 
 - **Live RHEED Feed**: View real-time RHEED patterns with adjustable exposure and frame rates.
-- **Intensity Monitoring**: Select a Region of Interest (ROI) on the live feed to plot intensity oscillations in real-time, essential for monitoring layer-by-layer growth.
+- **Intensity Oscillations**: Select a rectangular Region of Interest (ROI) on the live feed to plot intensity oscillations in real-time.
 - **Image Acquisition**:
   - **Single Capture**: Save individual RHEED frames.
-  - **Streaming**: Record sequences of frames at a specified frequency and duration.
+  - **Streaming**: Record sequences of frames at a specified frequency and duration (useful for saving thin-film growthtrajectory data).
 - **Metadata Integration**: Automatically embeds temperature readings (from a connected pyrometer) and timestamps into filenames.
-- **Data Analysis**: Tools for analyzing RHEED oscillations (see `GetOscillationPlot.py`).
-- **Dual System Support**: Includes configurations for both Calcogenide and Oxide MBE systems.
 
 ## Hardware Requirements
 
 - **Camera**: Allied Vision camera (uses `vmbpy` driver).
-- **Pyrometer**: Compatible pyrometer for temperature reading (see `PyrometerControl.py`).
+- **Pyrometer**: Uses the BASF EXACTUS pyrometer.
 
 ## Installation
 
@@ -62,10 +60,5 @@ python Code/OxideMBE_Rheed_GUI.py
 - `Code/`: Source code for the application.
   - `CalcogenideMBE_Rheed_GUI.py`: Main entry point for Calcogenide MBE.
   - `OxideMBE_Rheed_GUI.py`: Main entry point for Oxide MBE.
-  - `PyrometerControl.py`: Interface for pyrometer communication.
-  - `GetOscillationPlot.py`: Utilities for plotting and analyzing oscillations.
 - `environment.yml`: Conda environment definition.
 
-## License
-
-[Insert License Information Here]
