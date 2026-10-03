@@ -1,3 +1,4 @@
+<!-- Last edited: 2026-10-03 13:50 CDT -->
 <a id="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -52,6 +53,12 @@
 RHEED Viewer is a desktop app for acquiring, displaying, and saving [Reflection High-Energy Electron Diffraction (RHEED)](https://en.wikipedia.org/wiki/Reflection_high-energy_electron_diffraction) data in real time.
 RHEED is how growers watch a thin film form, layer by layer, inside a molecular beam epitaxy (MBE) chamber.
 
+![Live RHEED feed with ROI and intensity oscillation plot](images/live-feed.png)
+
+The screenshots in this README come from the real windows running with a simulated camera and pyrometer.
+The RHEED pattern and the oscillation trace are synthetic and only show the layout.
+In the live feed, the frame shows a timestamp and the pyrometer temperature, the green box is the ROI, and the yellow trace is the ROI intensity over time.
+
 Proprietary RHEED software has more advanced features.
 RHEED Viewer gives you something different: full control over how data is saved, so it plugs into your own processing pipeline.
 
@@ -102,6 +109,14 @@ Typical workflow:
 3. **Acquire or stream.**
    - Click **Acquire RHEED Image** for a snapshot.
    - Click **Start RHEED Stream** to record a sequence. A dialog asks for duration, frequency, exposure time, and grower initials.
+
+The control window at start-up, before you start the live feed:
+
+![Control window at start-up](images/control-window.png)
+
+The stream settings dialog:
+
+![Stream settings dialog](images/stream-dialog.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
