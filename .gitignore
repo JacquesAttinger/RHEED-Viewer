@@ -7,3 +7,5 @@ ECHO is on.
 
 venv/
 Acquiring Images Via Python Script Tests/
+# Keep README images (logo, screenshots)
+!images/*.png
