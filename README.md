@@ -8,6 +8,10 @@
 
 <br />
 <div align="center">
+  <a href="https://github.com/JacquesAttinger/RHEED-Viewer">
+    <img src="images/logo.png" alt="RHEED Viewer logo" width="120" height="120">
+  </a>
+
   <h3 align="center">RHEED Viewer</h3>
 
   <p align="center">
